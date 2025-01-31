@@ -1,81 +1,148 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang=pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carreira Policial Militar: Da Graduação à Liderança</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Conferência de Tecnologia do Futuro 2025</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
-    <!-- Seção Hero -->
-    <header class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
       <div class="hero-content">
-        <h1>Alcance sua próxima graduação na Polícia Militar</h1>
+        <h1>Conferência de Tecnologia do Futuro 2025</h1>
         <p>
-          Desenvolva habilidades técnicas, emocionais e de liderança para
-          ascender na carreira.
+          Junte-se às principais vozes em IA, computação em nuvem e
+          desenvolvimento web
         </p>
-        <a href="#formulario" class="cta-button">Comece Sua Preparação</a>
-      </div>
-    </header>
-
-    <!-- Seção: Desafios da Carreira -->
-    <section class="challenges">
-      <h2>Supere os 3 Maiores Desafios</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>1. Preparação para Promoções</h3>
-          <p>Cursos e treinamentos para passar em provas de ascensão.</p>
-        </div>
-        <div class="card">
-          <h3>2. Gestão de Equipes</h3>
-          <p>Técnicas de liderança adaptadas à realidade operacional.</p>
-        </div>
-        <div class="card">
-          <h3>3. Equilíbrio Vida Profissional</h3>
-          <p>Estratégias para manter saúde física e mental.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="beneficios">
-      <h2>Benefícios da Preparação Contínua</h2>
-      <ul>
-        <li>Maior confiança em provas de promoção</li>
-        <li>Habilidades de liderança comprovadas</li>
-        <li>Equilíbrio entre vida pessoal e missão</li>
-      </ul>
-    </section>
-
-    <!-- Seção: Etapas da Evolução -->
-    <section class="phases">
-      <h2>Fases da Carreira</h2>
-      <div class="timeline">
-        <div class="phase">
-          <h3>Soldado → Cabo</h3>
-          <p>Domine normas regimentais e técnicas operacionais.</p>
-        </div>
-        <div class="phase">
-          <h3>Sargento → Tenente</h3>
-          <p>Aprimore gestão de crises e tomada de decisão.</p>
-        </div>
-        <div class="phase">
-          <h3>Capitão → Coronel</h3>
-          <p>Liderança estratégica e políticas de segurança pública.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action (CTA) -->
-    <section class="cta">
-      <h2>Prepare-se para o Próximo Nível</h2>
-      <button>Baixe o Guia de Estudos para Promoções</button>
+        <form class="cta-form" id="formRegistro">
+          <input type="email" placeholder="Digite seu e-mail" required>
+          <button type="submit">Garantir Minha Vaga</button>
+      </form>
       <div class="contador">
-        <p>
-          Já <span id="numero-visitas">0</span> PMs começaram sua preparação!
-        </p>
+          Vagas restantes: <span id="vagas">50</span>
+      </div>
       </div>
     </section>
+
+    <section class="contador-regressivo">
+      <h2>Faltam Apenas:</h2>
+      <div id="timer">
+          <div class="time-box">
+              <span id="dias">00</span>
+              <small>Dias</small>
+          </div>
+          <div class="time-box">
+              <span id="horas">00</span>
+              <small>Horas</small>
+          </div>
+          <div class="time-box">
+              <span id="minutos">00</span>
+              <small>Minutos</small>
+          </div>
+          <div class="time-box">
+              <span id="segundos">00</span>
+              <small>Segundos</small>
+          </div>
+      </div>
+  </section>
+
+    <!-- Speakers Section -->
+    <section class="speakers">
+      <h2>Nossos palestrantes</h2>
+      <div class="speakers-grid">
+        <div class="speaker-card">
+          <img src="./images/speaker-1.webp" alt="Speaker 1" />
+          <h3>Dra. Jane Doe</h3>
+          <p>Especialista em IA na TechCorp</p>
+        </div>
+        <div class="speaker-card">
+          <img src="./images/speaker-2.webp" alt="Speaker 2" />
+          <h3>João Smith</h3>
+          <p>Arquiteto de Nuvem na CloudNet</p>
+        </div>
+        <div class="speaker-card">
+          <img src="./images/speaker-3.webp" alt="Speaker 3" />
+          <h3>Sara Lee</h3>
+          <p>Desenvolvedor Full Stack na WebWorks</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule">
+      <h2>Programação do Evento</h2>
+      <div class="schedule-grid">
+        <div class="schedule-item">
+          <h3>09:00 - Palestra de abertura</h3>
+          <p>Dra. Jane Doe: "O futuro da IA"</p>
+        </div>
+        <div class="schedule-item">
+          <h3>11:00 - Tendências de computação em nuvem</h3>
+          <p>João Smith e palestrantes</p>
+        </div>
+        <div class="schedule-item">
+          <h3>14:00 – Criando aplicativos Web escalonáveis</h3>
+          <p>Sara Lee</p>
+        </div>
+        <div class="schedule-item">
+          <h3>16:00 - Considerações de Encerramento</h3>
+          <p>Inovações tecnológicas além de 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter">
+      <div class="newsletter-grid">
+        <div class="newsletter-image">
+          <img
+            src="images/undraw_subscribe_vspl.svg"
+            alt="Newsletter illustration"
+          />
+        </div>
+        <div class="newsletter-text">
+          <h2>Assine nossa newsletter</h2>
+          <p>
+            Mantenha-se atualizado com as últimas notícias do evento, anúncios
+            de palestrantes e mais!
+          </p>
+          <form action="#" method="post" class="newsletter-form">
+            <div class="form-group">
+              <label for="name">Nome Completo</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Digite seu nome completo"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Endereço eletrônico</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+            <button type="submit" class="btn">Subscrever</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer and Call to Action -->
+    <footer class="footer">
+      <p>
+        &copy; Conferência de Tecnologia do Futuro 2025. Todos os direitos
+        reservados.
+      </p>
+      <a href="#register" class="btn">Registre-se Agora</a>
+    </footer>
 
     <script src="script.js"></script>
   </body>
