@@ -13,6 +13,16 @@ body {
   text-align: center;
 }
 
+.cta-button {
+  background: #ffd700;
+  color: #003366;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
 .challenges,
 .phases {
   text-align: center;
@@ -68,6 +78,16 @@ li {
   padding: 10px;
   background-color: white;
   border-radius: 5px;
+}
+
+.contador {
+  text-align: center;
+  padding: 20px;
+  background: #e9ecef00;
+}
+#numero-visitas {
+  color: hsl(220, 12%, 95%);
+  font-weight: bold;
 }
 
 /* Responsividade */
